@@ -1,18 +1,12 @@
 import { Link } from "react-router-dom"
+import HomePage from "./HomePage"
 
-const Title = () => {
-  return (
-    <h1>
-      Hello World!
-    </h1>
-  )
-}
+
 
 function App() {
   return (
-    <div className="p-5">
-      <Link to='/about'>About</Link>
-      <Title />
+    <div>
+      <HomePage />
     </div>
   )
 }

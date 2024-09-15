@@ -1,0 +1,189 @@
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to bottom, #fdf5df, #f5e3c9);
+    color: #002366;
+    padding-top: 20px; /* Added padding to the top of the app */
+  }
+  
+  /* Homepage Container */
+  .homepage {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px; /* Add padding to prevent nav overlap */
+  }
+  
+  /* Top Section */
+  .top-section {
+    width: 100%;
+    background-color: #5ebec4;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+    position: relative;
+    box-sizing: border-box; /* Ensure padding is considered in width */
+    margin-top: 20px; /* Added margin to create space from the top */
+  }
+  
+  .greeting h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .greeting p {
+    font-size: 16px;
+  }
+  
+  .avatar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+  }
+  
+  .avatar img {
+    width: 100%;
+    border-radius: 50%;
+  }
+  
+  .progress-bar {
+    margin-top: 20px;
+    background: #fdf5df;
+    border-radius: 10px;
+    height: 20px; /* Increased height for better visibility */
+    overflow: hidden; /* Ensure the progress stays within the bar */
+    padding: 5px; /* Add padding inside the bar */
+    box-sizing: border-box; /* Ensure padding is included in size */
+  }
+  
+  .progress {
+    height: 100%;
+    background-color: #f92c85;
+    border-radius: 10px;
+  }
+  
+  .progress-bar p {
+    margin-top: 10px; /* Add space between bar and text */
+    font-size: 14px;
+    color: white;
+  }
+  
+  /* Task Section */
+  .tasks-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .tasks-section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .task-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .task-card p {
+    margin: 0;
+  }
+  
+  .task-card button {
+    background-color: #f92c85;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .task-card button:hover {
+    background-color: #e02a6f;
+  }
+  
+  /* Challenges Section */
+  .challenges-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .challenge-card {
+    background-color: #f92c85;
+    color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    font-size: 16px;
+  }
+  
+  /* Stats Section */
+  .stats-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .stats-section h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  
+  .stats {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .stat-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin: 0 5px;
+  }
+  
+  /* Bottom Navigation */
+  .bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+    background-color: #5ebec4;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .nav-item {
+    font-size: 14px; /* Smaller font size for mobile */
+    cursor: pointer;
+    text-align: center;
+    flex: 1; /* Ensures each nav item takes equal width */
+  }
+  
+  /* Icon and Text */
+  .nav-item::before {
+    content: attr(data-icon);
+    display: block;
+    font-size: 24px; /* Icon size */
+    margin-bottom: 2px; /* Space between icon and label */
+  }
+  
+  /* Ensures text wraps properly */
+  .nav-item p {
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  
